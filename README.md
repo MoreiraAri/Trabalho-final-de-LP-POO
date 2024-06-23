@@ -1,25 +1,72 @@
-# ![Concha de Vieira Fotógrafo Portfólio Site](https://github.com/MoreiraAri/Trabalho-final-de-LP-POO/assets/144627734/e1d4e033-7dfd-4dc4-919c-db5fc8df0d76)
-
+![Concha de Vieira Fotógrafo Portfólio Site](https://github.com/AndradeDaiane/Trabalho-final-de-LP-POO/assets/161532533/a6cd3482-aa7c-4ded-b18f-d2b913ceff70)
 ## 📝 Descrição
 Este projeto consiste no desenvolvimento de um sistema de vendas de livros. Ele é capaz de gerar telas projetada para gerenciar as operações de uma livraria, permitindo o cadastro e gerenciamento de livros, processamento de pedidos de clientes e geração de relatórios de vendas. 
-Foi desenvolvido utilizando Java Desktop, versão 17 e a biblioteca Swing para a criação da interface gráfica.
-## 🔗 Diagrama de classe Draw.io
-# ![Fluxo Livraria Santos](https://github.com/MoreiraAri/Trabalho-final-de-LP-POO/assets/144627734/4c5593fa-c918-4436-973b-b37b38d78d20)
+Foi desenvolvido utilizando Java Desktop e a biblioteca Swing para a criação da interface gráfica.
 
-## 🛠 Funcionalidades
-### Tela Principal (vitrine de produtos)
+## Biblioteca e Versão
+- Versão 17
+- import javax.swing.*;
+  import java.awt.*;
+  import java.awt.event.ActionEvent;
+  import java.awt.event.ActionListener;
+  import java.util.Map;
 
-- A tela deve exibe uma lista de produtos disponíveis para compra na livraria;
-- Detalhes dos produtos, como título, autor, preço e imagem.
-### Tela de Login
+## Utilização do Sistema 💻:
+
+### Tela de Vitrine de Livros 📚:
+
+- Exibe uma grade de livros disponíveis para venda, sendo eles da categorias de livro de Mais Vendidos, Romance, AutoAjuda, Infatis, é os Clássicos da Literatura Brasileira.
+- Cada produto é representado por uma botão, imagem, é nome.
+- Ao clicar em cada Livro, abrir uma tela, no qual irá conter os detalhes, como Autor, Ano de Edição, Quantidade, Preço, Sinopse do Livro, botão adionar ao carrinho e comprar agora.
+- Na tala de Vitrine também, irá conter mais dois botões que são o de Login/Usuario é Carrinho.
+
+### Tela de Login 👤🔐:
 - Permite ao usuário fazer um cadastro ou acessar o sistema;
 - Opção para recuperação de senha.
-### Tela carrinho de compra
-- Permite aos usuários visualizar os produtos adicionados ao carrinho, modificar a quantidade ou remover itens;
-- Emite uma mensagem de confirmação.
-### Tela forma de pagamento
-- Onde os usuários podem inserir as informações de pagamento e concluir a compra.
-## 📽 Vídeo de apresentação
 
-https://github.com/MoreiraAri/Trabalho-final-de-LP-POO/assets/144627734/64d8ae57-df95-42d4-a369-cc3c91609681
+### Adicionar o Livro ao Carrinho de Compra 📖➕:
+
+- Os usuários podem selecionar produtos na vitrine ao clicar no Livro e abri a tela de Detalhe, no qual irá aparecer o botão adicionar no Carrinho.
+- Eles podem escolher a quatidade conforme estoque pré estabelecido. Lembrando que se escolher uma quantidade maior do que está em estoque, irá aparecer uma mensagem informando que pode adionar de x a x qunatidade.
+
+### Tela do Carrinho de Compra da Livraria 🛒📚:
+
+- Exibe todos os Livros atualmente no carrinho, incluindo nome, preço, quantidade, subtotal de cada livro, Frete/taxa de Entrega, é valor Total.
+- Permite que os usuários visualizem o total do carrinho incluindo o frete no qual e um valor Fixo para todas as regiões.
+- Oferece opções para esvaziar o carrinho ou Realizar o pagamento.
+
+### Tela Realizar Pagamento 💳💶:
+
+- Ao prosseguir para o pagamento, atraves da tela de detalhes no botão "Comprar agora", ou após ter adicionadno os livros ao carrinho na tela de carrinho, no botão "Realizar pagamento", ao clicar nestes botões iáta abrir uma nova tela que e de Forma de pagamento, no qual irá aparecer forma de pagamento "Pagamento Pix", Pagamento Cartão de Debito", Pagamento Cartão de Credito", e Pagamento Boleto", escolher a forma que deseja pagar, ao esolher será redirecionados para uma tela de pagamento onde podem inserir suas informações de pagamento.
+- Após o pagamento ser concluído com sucesso, uma mensagem de confirmação é exibida, junto o prazo de entrega do Livro.
+
+## Funcionamento do Sistema Criado da Livraria Santos 💻:
+
+- Foi criada várias classes Java que se comunicam para fornecer funcionalidades específicas para o funcinamento do sistema.
+- As classes principais incluem TelaPrincipal, TelaCarrinho, TelaPagamentoFrame, TelaLoginFrame, TeladeCadastro, CarrinhodeCompra, Cliente, Entrega, Estoque,FormadePagamento, Fornecedor, Funcionario,ItemCarrinho, Livro, Pagamento, Pedido, e Pessoa.
+- Foi utilizado no código o pacote javax.swing, java.awt, e java.util.Map  para criar a interface gráfica.
+- As interações do usuário são tratadas por meio de ActionListeners associados a botões e outros componentes de interface.
+
+## Vídeo do Sistema da Livraria Santos 🎥
+
+https://github.com/AndradeDaiane/Trabalho-final-de-LP-POO/assets/161532533/0d0917d7-7063-4094-9f61-bc1024708391
+
+## Diagrama de Classes 📊
+
+![LivrariaS](https://github.com/AndradeDaiane/Trabalho-final-de-LP-POO/assets/161532533/8d546d2c-8f3f-416a-9350-9d46f2bcd492)
+
+## Como Usar o Site ▶️:
+
+1. Intale o programa java Intellij IDEA.
+1. Certifique-se de baixando também o JDK na versão 17 (Java Development Kit).
+2. Baixe este repositório do meu GitHub.
+3. Importe o projeto.
+4. Compile o código-fonte.
+5. Execute a classe TelaPrincipal para iniciar o sistema.
+6. Faça login com as credenciais ou crie uma cadastro.
+7. Explore a vitrine de livros, adicione itens ao carrinho, realize o pagamento. 
+
+## Creditos
+
+Este sistema mostrar a implementação de um condigo em java de vendas de livro simples, com uma interface gráfica intuitiva e funcionalidades essenciais para uma demostração de sistema de vendas via site e compra agradável.
 
