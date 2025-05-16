@@ -1,8 +1,7 @@
 ![Concha de Vieira Fotógrafo Portfólio Site](https://github.com/AndradeDaiane/Trabalho-final-de-LP-POO/assets/161532533/a6cd3482-aa7c-4ded-b18f-d2b913ceff70)
 ## 📝 Descrição
 Este projeto consiste no desenvolvimento de um sistema de vendas de livros. Ele é capaz de gerar telas projetada para gerenciar as operações de uma livraria, permitindo o cadastro e gerenciamento de livros, processamento de pedidos de clientes e geração de relatórios de vendas. 
-Foi desenvolvido utilizando Java Desktop e a biblioteca Swing para a criação da interface gráfica.
-
+Foi desenvolvido utilizando Java Desktop e a biblioteca Swing para a criação da interface gráfica. Projeto desenvolvido como trabalho final da disciplina de Lógica de Programação e Programação Orientada a Objetos (LP/POO)
 ## Biblioteca e Versão
 - Versão 17
 - import javax.swing.*;
